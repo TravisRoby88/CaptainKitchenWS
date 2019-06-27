@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px; 
+    font-family: "Roboto Cn", sans-serif;   
+}
+
+body{
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none; 
+    color: brown;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 33vh;
+    background-color: aqua;
+}
+
+.container{
+    max-width: 120rem; 
+    width: 90%;
+    margin: 0 auto;
+}
+
+nav{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase; 
+    font-size: 1.6rem; 
+}
+
+.brand{
+    display: flex;
+    font-size: 3rem;
+    font-weight: 300;
+    transform: translateX(-100rem);
+    animation: slideIn 0.8s forwards;
+    background-color: aqua;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    transform: translateX(100rem);
+    animation: slideIn 0.5s forwards;
+}
+
+nav ul li:nth-child(1){
+    animation-delay: .2s;
+}
+
+nav ul li:nth-child(2){
+    animation-delay: .5s;
+}
+
+nav ul li:nth-child(3){
+    animation-delay: .8s;
+}
+
+nav ul li:nth-child(4){
+    animation-delay: 1s;
+}
+
+nav ul li a{
+    padding: .7rem 0;
+    margin: 0 3rem;
+    position: relative;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+nav ul li a:last-child{
+    margin-right: 20;
+
+}
+
+nav ul li a:before,
+nav ul li a:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: crimson;
+    left: 0;
+    transform: scaleX(0);
+    transition: all .5s;
+}
+
+nav ul li a::before{
+    top: 0;
+}
+
+nav ul li a::after{
+    bottom: 0;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after{
+    transform: scaleX(1)
+}
+
+h1{
+    padding-left: 10rem;
+    font-size: 5rem; 
+    font-family: "Roboto Cn", sans-serif;
+    text-transform: uppercase;
+    color: crimson;
+    background-color: azure;
+}
+
+h3{
+    margin: 1rem;
+    padding-left: 5rem;
+    font-size: large;
+    color: crimson;
+    text-decoration: underline;
+    background-color: azure;
+}
+
+.about {
+    flex: 1;
+ font-size: 22px;
+ background-color: azure;
+}
+
+
+
+
+.intro{
+    position: relative;
+}
+
+
+.slideshow-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+}
+
+/*.slideshow-img:first-child{
+    display: block;
+}
+*/
+
+
+
+
+
+
+
+.main-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    background-color: azure;
+    flex: 1;
+}
+
+.price{
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: gray;
+    font-size: 15px;
+}
+
+
+button:hover{
+    color: red;
+    background-color: yellow;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 5rem; 
+    font-family: "Roboto Cn", sans-serif;
+    text-transform: uppercase;
+    color: crimson;
+    padding: 5rem;
+    background-color: azure;
+}
+
+br{
+    background-color: azure;
+}
+
+hr{
+    background-color: azure;
+}
+
+h4{
+    font-size: 20px;
+    font-family: cursive;
+    color: crimson;
+    margin-left: 20px;
+}
+
+.main-container img:hover{
+    transform: scale(2, 2);
+}
+
+.menu img{
+    width: 200px;
+    height: 200px;
+}
+
+#carouselExampleSlidesOnly{
+    background-color: blue;
+    width: 450px;
+    height: 450px;
+}
+
+
+
+
+
+
+
+@media(max-width:600px){
+    body{
+        width: 100%;
+        float: none;
+    }
+
+    footer{
+        width: 100%;
+        float: none;
+    }
+}
+
+@keyframes slideIn {
+    from{
+
+
+    }
+    to{
+        transform: translate(0);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
